@@ -14,6 +14,7 @@ output "response_body" {
   description = "Response body information"
 }
 
+
 output "respone_headers" {
   value = data.http.example.response_headers
   description = "Response headers information"
