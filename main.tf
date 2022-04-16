@@ -19,3 +19,9 @@ output "respone_headers" {
   value = data.http.example.response_headers
   description = "Response headers information"
 }
+
+resource "time_static" "example" {}
+
+output "current_time" {
+  value = time_static.example.rfc3339
+}
